@@ -14,6 +14,8 @@
 		4F1CCAAF1A098F6900E35696 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1CCAAE1A098F6900E35696 /* Images.xcassets */; };
 		4F1CCAB21A098F6900E35696 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1CCAB01A098F6900E35696 /* LaunchScreen.xib */; };
 		4F1CCABE1A098F6900E35696 /* fibonacciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCABD1A098F6900E35696 /* fibonacciTests.swift */; };
+		4F1CCAC81A09909700E35696 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCAC71A09909700E35696 /* ListViewModel.swift */; };
+		4F1CCACA1A09913E00E35696 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		4F1CCAB71A098F6900E35696 /* fibonacciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fibonacciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1CCABC1A098F6900E35696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F1CCABD1A098F6900E35696 /* fibonacciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fibonacciTests.swift; sourceTree = "<group>"; };
+		4F1CCAC71A09909700E35696 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				4F1CCAA51A098F6900E35696 /* AppDelegate.swift */,
+				4F1CCAC71A09909700E35696 /* ListViewModel.swift */,
 				4F1CCAA71A098F6900E35696 /* FirstViewController.swift */,
 				4F1CCAA91A098F6900E35696 /* SecondViewController.swift */,
 				4F1CCAAB1A098F6900E35696 /* Main.storyboard */,
 				4F1CCAAE1A098F6900E35696 /* Images.xcassets */,
 				4F1CCAB01A098F6900E35696 /* LaunchScreen.xib */,
 				4F1CCAA31A098F6900E35696 /* Supporting Files */,
+				4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */,
 			);
 			path = fibonacci;
 			sourceTree = "<group>";
@@ -217,6 +223,8 @@
 			files = (
 				4F1CCAAA1A098F6900E35696 /* SecondViewController.swift in Sources */,
 				4F1CCAA61A098F6900E35696 /* AppDelegate.swift in Sources */,
+				4F1CCAC81A09909700E35696 /* ListViewModel.swift in Sources */,
+				4F1CCACA1A09913E00E35696 /* ItemViewModel.swift in Sources */,
 				4F1CCAA81A098F6900E35696 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
