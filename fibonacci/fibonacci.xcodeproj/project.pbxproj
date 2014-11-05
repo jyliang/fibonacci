@@ -17,6 +17,9 @@
 		4F1CCAC81A09909700E35696 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCAC71A09909700E35696 /* ListViewModel.swift */; };
 		4F1CCACA1A09913E00E35696 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */; };
 		4F1CCACC1A09A92C00E35696 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCACB1A09A92C00E35696 /* Utility.swift */; };
+		4F1CCACE1A09ABC700E35696 /* NumberCalculationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCACD1A09ABC700E35696 /* NumberCalculationOperation.swift */; };
+		4F1CCAD01A09B8AE00E35696 /* NumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCACF1A09B8AE00E35696 /* NumberTableViewCell.swift */; };
+		4F1CCAD21A09B90200E35696 /* NumberDisplayOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCAD11A09B90200E35696 /* NumberDisplayOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		4F1CCAC71A09909700E35696 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		4F1CCACB1A09A92C00E35696 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4F1CCACD1A09ABC700E35696 /* NumberCalculationOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCalculationOperation.swift; sourceTree = "<group>"; };
+		4F1CCACF1A09B8AE00E35696 /* NumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
+		4F1CCAD11A09B90200E35696 /* NumberDisplayOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberDisplayOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 				4F1CCAA31A098F6900E35696 /* Supporting Files */,
 				4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */,
 				4F1CCACB1A09A92C00E35696 /* Utility.swift */,
+				4F1CCACD1A09ABC700E35696 /* NumberCalculationOperation.swift */,
+				4F1CCACF1A09B8AE00E35696 /* NumberTableViewCell.swift */,
+				4F1CCAD11A09B90200E35696 /* NumberDisplayOperation.swift */,
 			);
 			path = fibonacci;
 			sourceTree = "<group>";
@@ -224,12 +233,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1CCAD01A09B8AE00E35696 /* NumberTableViewCell.swift in Sources */,
+				4F1CCACE1A09ABC700E35696 /* NumberCalculationOperation.swift in Sources */,
 				4F1CCAAA1A098F6900E35696 /* SecondViewController.swift in Sources */,
 				4F1CCAA61A098F6900E35696 /* AppDelegate.swift in Sources */,
 				4F1CCACC1A09A92C00E35696 /* Utility.swift in Sources */,
 				4F1CCAC81A09909700E35696 /* ListViewModel.swift in Sources */,
 				4F1CCACA1A09913E00E35696 /* ItemViewModel.swift in Sources */,
 				4F1CCAA81A098F6900E35696 /* FirstViewController.swift in Sources */,
+				4F1CCAD21A09B90200E35696 /* NumberDisplayOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

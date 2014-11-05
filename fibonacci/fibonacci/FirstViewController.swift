@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ListViewModelDelegate {
 
     let loadmoreThreshold : CGFloat = 100
     var listVM = ListViewModel()
@@ -18,6 +18,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        listVM.delegate = self
         listVM.initSeedItems()
     }
 
@@ -37,15 +38,20 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as NumberTableViewCell
         let item = self.listVM.items[indexPath.item]
-        item.populateCell(cell)
+        cell.tag = indexPath.item
+//        item.populateCell(cell)
+        cell.loadItem(item)
         return cell
     }
 
     //MARK: - Delegates
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
+        let item = self.listVM.items[indexPath.item]
+        let value = Utility.getStringValue(item.valueList)
+        let alert = UIAlertView(title: "Value of fibonacci number #\(indexPath.item+1)", message: "\(value)", delegate: nil, cancelButtonTitle: "OK")
+        alert.show()
     }
 
     func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -71,6 +77,20 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     func scrollViewReachedThreshold(scrollView : UIScrollView) -> Bool {
         let threshold = (CGFloat(self.listVM.items.count) * self.cellHeight - CGRectGetHeight(scrollView.frame)-scrollView.contentOffset.y)
         return threshold < loadmoreThreshold
+    }
+
+    //MARK: - ListViewModelDelegate
+    func updateCellAtIndex(index: Int) {
+        for (cellIndex, element) in enumerate(self.tableView.visibleCells()) {
+            if (element.tag == index) {
+                let item = self.listVM.items[index]
+                if (element.isKindOfClass(NumberTableViewCell)) {
+                    let cell = element as NumberTableViewCell
+                    cell.loadItem(item)
+                }
+                return
+            }
+        }
     }
 }
 
