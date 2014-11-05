@@ -10,7 +10,11 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let loadmoreThreshold : CGFloat = 100
     var listVM = ListViewModel()
+    let cellHeight : CGFloat = 44
+
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +46,31 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     //MARK: - Delegates
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
+    }
+
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if (scrollViewReachedThreshold(scrollView)) {
+            self.loadMore()
+        }
+    }
+
+    func loadMore() {
+        var insertionRows = Array<NSIndexPath>()
+        let count = 20
+        let base = self.listVM.items.count
+        for (var i = 0; i < count; i++) {
+            insertionRows.append(NSIndexPath(forItem: i+base, inSection: 0))
+        }
+        self.listVM.loadMoreItems(count)
+
+        self.tableView.beginUpdates()
+        self.tableView.insertRowsAtIndexPaths(insertionRows, withRowAnimation: UITableViewRowAnimation.None)
+        self.tableView.endUpdates()
+    }
+
+    func scrollViewReachedThreshold(scrollView : UIScrollView) -> Bool {
+        let threshold = (CGFloat(self.listVM.items.count) * self.cellHeight - CGRectGetHeight(scrollView.frame)-scrollView.contentOffset.y)
+        return threshold < loadmoreThreshold
     }
 }
 

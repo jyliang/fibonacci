@@ -14,10 +14,18 @@ class ListViewModel: NSObject {
     func initSeedItems() {
         self.items.append(ItemViewModel(value: 1))
         self.items.append(ItemViewModel(value: 1))
-        for (var i = 0; i < 20; i++ ){
-            self.items.append(ItemViewModel(prev1:items[i],prev2:items[i+1]))
-        }
+        loadMoreItems(20)
     }
 
+    func loadMoreItems(number : Int) {
+        NSLog("load more")
+        if (self.items.count < 2){
+            return
+        }
+        let baseOffset = items.count - 2
+        for (var i = 0; i < number; i++) {
+            self.items.append(ItemViewModel(prev1:items[i+baseOffset],prev2:items[baseOffset+1+i]))
+        }
+    }
 
 }
