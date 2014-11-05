@@ -16,6 +16,7 @@
 		4F1CCABE1A098F6900E35696 /* fibonacciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCABD1A098F6900E35696 /* fibonacciTests.swift */; };
 		4F1CCAC81A09909700E35696 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCAC71A09909700E35696 /* ListViewModel.swift */; };
 		4F1CCACA1A09913E00E35696 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */; };
+		4F1CCACC1A09A92C00E35696 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CCACB1A09A92C00E35696 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4F1CCABD1A098F6900E35696 /* fibonacciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fibonacciTests.swift; sourceTree = "<group>"; };
 		4F1CCAC71A09909700E35696 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		4F1CCACB1A09A92C00E35696 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				4F1CCAB01A098F6900E35696 /* LaunchScreen.xib */,
 				4F1CCAA31A098F6900E35696 /* Supporting Files */,
 				4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */,
+				4F1CCACB1A09A92C00E35696 /* Utility.swift */,
 			);
 			path = fibonacci;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				4F1CCAAA1A098F6900E35696 /* SecondViewController.swift in Sources */,
 				4F1CCAA61A098F6900E35696 /* AppDelegate.swift in Sources */,
+				4F1CCACC1A09A92C00E35696 /* Utility.swift in Sources */,
 				4F1CCAC81A09909700E35696 /* ListViewModel.swift in Sources */,
 				4F1CCACA1A09913E00E35696 /* ItemViewModel.swift in Sources */,
 				4F1CCAA81A098F6900E35696 /* FirstViewController.swift in Sources */,
