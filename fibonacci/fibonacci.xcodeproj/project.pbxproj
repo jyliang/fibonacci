@@ -91,19 +91,16 @@
 		4F1CCAA21A098F6900E35696 /* fibonacci */ = {
 			isa = PBXGroup;
 			children = (
+				4F1CCAD61A09BF7C00E35696 /* ViewControllers */,
+				4F1CCAD71A09BF8700E35696 /* Views */,
+				4F1CCAD51A09BF6000E35696 /* ViewModels */,
+				4F1CCAD41A09BF5400E35696 /* Operations */,
+				4F1CCAD31A09BF4A00E35696 /* Utility */,
 				4F1CCAA51A098F6900E35696 /* AppDelegate.swift */,
-				4F1CCAC71A09909700E35696 /* ListViewModel.swift */,
-				4F1CCAA71A098F6900E35696 /* FirstViewController.swift */,
-				4F1CCAA91A098F6900E35696 /* SecondViewController.swift */,
 				4F1CCAAB1A098F6900E35696 /* Main.storyboard */,
 				4F1CCAAE1A098F6900E35696 /* Images.xcassets */,
 				4F1CCAB01A098F6900E35696 /* LaunchScreen.xib */,
 				4F1CCAA31A098F6900E35696 /* Supporting Files */,
-				4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */,
-				4F1CCACB1A09A92C00E35696 /* Utility.swift */,
-				4F1CCACD1A09ABC700E35696 /* NumberCalculationOperation.swift */,
-				4F1CCACF1A09B8AE00E35696 /* NumberTableViewCell.swift */,
-				4F1CCAD11A09B90200E35696 /* NumberDisplayOperation.swift */,
 			);
 			path = fibonacci;
 			sourceTree = "<group>";
@@ -131,6 +128,49 @@
 				4F1CCABC1A098F6900E35696 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F1CCAD31A09BF4A00E35696 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4F1CCACB1A09A92C00E35696 /* Utility.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		4F1CCAD41A09BF5400E35696 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				4F1CCACD1A09ABC700E35696 /* NumberCalculationOperation.swift */,
+				4F1CCAD11A09B90200E35696 /* NumberDisplayOperation.swift */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		4F1CCAD51A09BF6000E35696 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4F1CCAC71A09909700E35696 /* ListViewModel.swift */,
+				4F1CCAC91A09913E00E35696 /* ItemViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		4F1CCAD61A09BF7C00E35696 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F1CCAA71A098F6900E35696 /* FirstViewController.swift */,
+				4F1CCAA91A098F6900E35696 /* SecondViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4F1CCAD71A09BF8700E35696 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F1CCACF1A09B8AE00E35696 /* NumberTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

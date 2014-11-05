@@ -11,8 +11,6 @@ import UIKit
 class ItemViewModel: NSObject {
     var valueList = Array<Int>() //digits stored in an array from the least significant digit to the most
 
-    var value:Int = -1;
-
     override init() {
         super.init()
     }
